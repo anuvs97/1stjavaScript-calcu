@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appu's Calculator</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <!-- name to title section -->
+    <h1>Appu's Calculator</h1>
+    <p>
+        This is a Calculator webpage built by use HTML,CSS,and JavaScript.
+        Created on 29/12/2022 and created by Anu. This is a simple programme 
+        and it can understand easly because i'm used basic HTML,CSS,and JavaScript 
+        programming launguages.And most important thing is 
+        "<b>This site is only for Mobile screens</b>"
+    </p>
+    <div class="headstyle">
+        <span class="space">Enter your name:</span><br>
+        <input type="text" id="name">
+        <button onclick="display()">Click Here!</button>
+        <h2> This is <span id="display-head"></span>'s Time to use</h2>
+    </div>
+    <!-- calculator section -->
+    <div class="frame">
+        <div class="calc">
+            <!-- display screen -->
+            <input type="text" id="screen"><br><br>
+
+            <!-- buttons and other -->
+            <div class="btns">
+                <button onclick="clicks(9)" class="btn2">9</button>
+                <button onclick="clicks(0)" class="btn2">0</button>
+                <button onclick="equal()" class="btn2" id="equal">=</button>
+                <button onclick="clearit()" class="btn2" id="clr">C</button>
+
+                <button onclick="clicks(5)" class="btn2">5</button>
+                <button onclick="clicks(6)" class="btn2">6</button>
+                <button onclick="clicks(7)" class="btn2">7</button>
+                <button onclick="clicks(8)" class="btn2">8</button>
+
+                <button onclick="clicks(1)" class="btn2">1</button>
+                <button onclick="clicks(2)" class="btn2">2</button>
+                <button onclick="clicks(3)" class="btn2">3</button>
+                <button onclick="clicks(4)" class="btn2">4</button>
+
+                <button onclick="clicks('+')" class="btn2"id="operation">+</button>
+                <button onclick="clicks('-')" class="btn2"id="operation">-</button>
+                <button onclick="clicks('*')" class="btn2"id="operation">x</button>
+                <button onclick="clicks('/')" class="btn2"id="operation">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
